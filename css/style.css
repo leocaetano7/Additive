@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #717171;
+}
+
+html{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header {
+    height: 200px;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 50%;
+}
+
+.menu {
+    padding-top: 30px;
+    width: 50%;
+    text-align: right;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.teste {
+    margin-top: -60px;
+    width: 240px;
+}
+
+section.sobre {
+    min-height: calc(100vh - 200px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.casa {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 800px; /* Reduzindo o tamanho da imagem */
+    position: absolute;
+    top: 60%;
+    right: -30%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media {
+    background-color: transparent;
+    position: absolute;
+    right: 30px;
+    top: 350px;
+}
+
+.social-media img {
+    background-color: transparent;
+    display: block;
+    width: 30px;
+    margin: 10px 0;
+}
+
+.texto-sobre {
+    margin-top: -200px;
+    text-align: left; /* Alinhamento do texto à esquerda */
+    margin-left: -600px; /* Adicionando margem à esquerda */
+}
+
+.texto-sobre h1 {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+.texto-sobre p {
+    margin-bottom: 20px 0; 
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 800px;
+}
+
+.texto-sobre button{
+    border: 0;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
