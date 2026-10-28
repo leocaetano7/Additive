@@ -1,37 +1,471 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>ADT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Additive Engenharia | Construção, Reformas e Regularização de Imóveis em Resende-RJ</title>
+    <meta name="description" content="Gestão, execução e fiscalização de obras, projetos e regularização de imóveis (usucapião) em Resende e região. Fale direto com um engenheiro pelo WhatsApp.">
+    <meta name="theme-color" content="#0B1215">
+
+    <!-- Compartilhamento (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Additive Engenharia">
+    <meta property="og:title" content="Additive Engenharia | Obras com engenheiro do projeto à entrega">
+    <meta property="og:description" content="Construção, reforma, fiscalização e regularização de imóveis em Resende e região.">
+    <meta property="og:url" content="https://leocaetano7.github.io/Additive/">
+    <meta property="og:image" content="https://leocaetano7.github.io/Additive/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://leocaetano7.github.io/Additive/">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Apenas as letras do logotipo "ADDITIVE" -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&text=ADITVE&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script>document.documentElement.classList.add('js');</script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "GeneralContractor",
+        "name": "Additive Engenharia",
+        "description": "Gestão, execução e fiscalização de obras, consultoria e projetos, regularização de imóveis e usucapião.",
+        "url": "https://leocaetano7.github.io/Additive/",
+        "logo": "https://leocaetano7.github.io/Additive/assets/apple-touch-icon.png",
+        "image": "https://leocaetano7.github.io/Additive/assets/og-image.jpg",
+        "telephone": "+55-24-98163-6739",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Resende",
+            "addressRegion": "RJ",
+            "addressCountry": "BR"
+        },
+        "areaServed": "Resende e região Sul Fluminense",
+        "sameAs": [
+            "https://www.instagram.com/additiveengenharia/",
+            "https://www.facebook.com/additiveengenharia"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <div class="center">
-            <div class="logo">
-                <img class="teste" src="assets/addt.png" alt="Logo">
-            </div>
-            <div class="menu">
-                <a href="home">Home</a>
-                <a href="Sobre">Sobre</a>
-                <a href="Projetos">Projetos</a>
-                <a href="Antes">Antes</a>
-            </div>
+    <!-- Ícones reutilizados na página -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.08-.12-.27-.2-.57-.34m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.82 9.82 0 0 1 9.88 9.89c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.48-8.41"/></symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.87.25-1.46 1.5-1.46h1.6V4.46A21 21 0 0 0 14.27 4c-2.3 0-3.88 1.4-3.88 3.98v2.52H7.8v3h2.6V21h3.1z"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+        <!-- Serviços -->
+        <symbol id="s-obra" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 28h24M7 28V14l9-7 9 7v14"/><path d="M13 28v-7h6v7"/><path d="M5 8h10M10 4v4"/></g></symbol>
+        <symbol id="s-fiscal" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><rect x="7" y="5" width="18" height="23" rx="2"/><path d="M12 5V3h8v2"/><path d="m11.5 16 3 3 6-6"/><path d="M12 23h8"/></g></symbol>
+        <symbol id="s-projeto" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 26 26 4l2 2L6 28z"/><path d="m9 21 2 2M13 17l2 2M17 13l2 2M21 9l2 2"/><path d="M4 9h7M4 4v10"/></g></symbol>
+        <symbol id="s-regular" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M8 3h11l6 6v19H8z"/><path d="M19 3v6h6"/><path d="M12 15h9M12 19h9M12 23h5"/></g></symbol>
+        <symbol id="s-plot" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 11V4h14v7"/><rect x="4" y="11" width="24" height="11" rx="2"/><path d="M9 18h14v10H9z"/><circle cx="23.5" cy="14.5" r=".8" fill="currentColor"/></g></symbol>
+    </svg>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="topo">
+        <div class="container header-inner">
+            <a class="brand" href="#topo" aria-label="Additive Engenharia, início">
+                <img src="assets/logo-mark.png" alt="" width="54" height="41">
+                <span class="brand-text">
+                    <span class="brand-name">ADDITIVE</span>
+                    <span class="brand-sub">Engenharia</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav" id="menu" aria-label="Principal">
+                <a href="#servicos">Serviços</a>
+                <a href="#obras">Obras</a>
+                <a href="#processo">Como trabalhamos</a>
+                <a href="#contato">Contato</a>
+                <a class="btn btn-primary btn-sm" href="#contato">Solicitar orçamento</a>
+            </nav>
         </div>
     </header>
-    <section class="sobre">
-        <div class="extras">
-            <img src="assets/img.png" alt="" class="casa">
-            <div class="social-media">
-                <a href=""><img src="assets/face.png" alt=""></a>
-                <a href=""><img src="assets/insta.png" alt=""></a>
+
+    <main id="conteudo">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="node" aria-hidden="true"></span>Engenharia civil · Resende/RJ</p>
+                    <h1>Sua obra conduzida por engenheiros, do projeto à entrega.</h1>
+                    <p class="lead">Construção, reforma, fiscalização e regularização de imóveis em Resende e região. Planejamento claro, execução acompanhada de perto e documentação em ordem.</p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary btn-lg" href="https://api.whatsapp.com/send?phone=5524981636739&text=Ol%C3%A1%2C%20Jo%C3%A3o%20Paulo.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Additive%20Engenharia." target="_blank" rel="noopener">
+                            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                            Pedir orçamento no WhatsApp
+                        </a>
+                        <a class="btn btn-ghost btn-lg" href="#servicos">
+                            Ver serviços
+                            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                        </a>
+                    </div>
+
+                    <ul class="hero-trust">
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Residencial e comercial</li>
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Engenheiro responsável pela obra</li>
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Atendimento em Resende e região</li>
+                    </ul>
+                </div>
+
+                <figure class="hero-media">
+                    <div class="hero-photo">
+                        <img src="assets/obra-residencia.jpg" alt="Fachada de residência de dois pavimentos com linhas curvas, vidro e porta de madeira" width="691" height="676" fetchpriority="high">
+                        <span class="corner c1" aria-hidden="true"></span>
+                        <span class="corner c2" aria-hidden="true"></span>
+                    </div>
+                    <div class="dim dim-v" aria-hidden="true"><span>Obra residencial</span></div>
+                    <figcaption class="hero-tag">
+                        <span class="hero-tag-label">Obras Additive</span>
+                        <strong>Residencial e comercial</strong>
+                        <span class="hero-tag-meta">Projeto, execução e acompanhamento técnico</span>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="texto-sobre">
-                <h1>Em Resende e região <br>Empreiteira é <span style="color: red;">Additive</span></h1>
-            <p>Minha missão é clara: transformar ideias em realidade, inspirando não apenas negócios, mas também impactando positivamente a vida das pessoas em Resende e arredores. Estou dedicada a enfrentar desafios com inovação e a fornecer soluções que impulsionem o desenvolvimento sustentável.</p>
-            <button></button>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section class="section" id="servicos">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow"><span class="num">01</span>Serviços</p>
+                        <h2>Tudo o que sua obra precisa, com responsabilidade técnica.</h2>
+                    </div>
+                    <p class="section-intro">Do terreno vazio à documentação final, você fala com uma única empresa e tem um engenheiro respondendo por cada etapa.</p>
+                </div>
+
+                <div class="services">
+                    <article class="service service-featured reveal">
+                        <svg class="service-icon" aria-hidden="true"><use href="#s-obra"/></svg>
+                        <span class="service-num">01</span>
+                        <h3>Gestão e execução de obras</h3>
+                        <p>Construção e reforma de imóveis residenciais e comerciais. Cuidamos do planejamento, da equipe, das compras e do cronograma para a obra andar no prazo e no orçamento.</p>
+                        <ul class="ticks">
+                            <li>Construção do zero</li>
+                            <li>Reformas e ampliações</li>
+                            <li>Muros de contenção</li>
+                            <li>Planejamento, compras e cronograma</li>
+                        </ul>
+                        <a class="link-arrow" href="#contato">Orçar minha obra <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                    </article>
+
+                    <article class="service reveal">
+                        <svg class="service-icon" aria-hidden="true"><use href="#s-fiscal"/></svg>
+                        <span class="service-num">02</span>
+                        <h3>Fiscalização de obras</h3>
+                        <p>Já tem sua equipe? Acompanhamos a obra tecnicamente para garantir que o que foi contratado seja entregue com qualidade.</p>
+                        <ul class="ticks">
+                            <li>Visitas técnicas periódicas</li>
+                            <li>Conferência de projeto e materiais</li>
+                        </ul>
+                    </article>
+
+                    <article class="service reveal">
+                        <svg class="service-icon" aria-hidden="true"><use href="#s-projeto"/></svg>
+                        <span class="service-num">03</span>
+                        <h3>Consultoria e projetos</h3>
+                        <p>Orientação técnica antes de gastar: avaliamos o que fazer, quanto deve custar e qual a melhor solução para o seu caso.</p>
+                        <ul class="ticks">
+                            <li>Projetos de engenharia</li>
+                            <li>Estudo de viabilidade e orçamento</li>
+                        </ul>
+                    </article>
+
+                    <article class="service reveal">
+                        <svg class="service-icon" aria-hidden="true"><use href="#s-regular"/></svg>
+                        <span class="service-num">04</span>
+                        <h3>Regularização de imóveis e usucapião</h3>
+                        <p>Imóvel sem documentação? Cuidamos da parte técnica para regularizar na prefeitura e no cartório.</p>
+                        <ul class="ticks">
+                            <li>Planta e memorial descritivo</li>
+                            <li>Regularização na prefeitura</li>
+                        </ul>
+                    </article>
+
+                    <article class="service reveal">
+                        <svg class="service-icon" aria-hidden="true"><use href="#s-plot"/></svg>
+                        <span class="service-num">05</span>
+                        <h3>Plotagem</h3>
+                        <p>Impressão de projetos e plantas em grande formato, com rapidez, para profissionais e clientes.</p>
+                        <a class="link-arrow" href="https://wa.me/message/X4LGNTT5OL32M1" target="_blank" rel="noopener">Pedir plotagem <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- OBRAS -->
+        <section class="section section-alt" id="obras">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow"><span class="num">02</span>Obras</p>
+                        <h2>Obras residenciais e comerciais em Resende e região.</h2>
+                    </div>
+                    <p class="section-intro">De residências e chalés a restaurantes e lojas. Acompanhe o passo a passo de cada obra no nosso Instagram.</p>
+                </div>
+
+                <!--
+                    Para adicionar fotos de obras: salve a imagem em assets/obras/ e
+                    troque a foto do <figure class="work-feature"> ou duplique o bloco.
+                -->
+                <div class="works">
+                    <figure class="work-feature reveal">
+                        <img src="assets/obra-residencia.jpg" alt="Residência de alto padrão com fachada curva e varanda de vidro" width="691" height="676" loading="lazy">
+                        <figcaption>
+                            <span class="work-cat">Residencial</span>
+                            <strong>Residência de alto padrão</strong>
+                        </figcaption>
+                    </figure>
+
+                    <div class="work-list reveal">
+                        <h3 class="work-list-title">Obras recentes</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener"><span class="work-name">Casa da Picanha</span><span class="work-cat">Comercial · Restaurante</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+                            <li><a href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener"><span class="work-name">Enoteca</span><span class="work-cat">Comercial · Loja</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+                            <li><a href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener"><span class="work-name">Green Station</span><span class="work-cat">Comercial</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+                            <li><a href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener"><span class="work-name">Chalé</span><span class="work-cat">Residencial</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+                            <li><a href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener"><span class="work-name">Muro de contenção</span><span class="work-cat">Contenção</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+                            <li><a href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener"><span class="work-name">Sauna</span><span class="work-cat">Residencial · Lazer</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+                            <li><a href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener"><span class="work-name">Cozinha</span><span class="work-cat">Reforma</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+                        </ul>
+                        <a class="btn btn-outline" href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener">
+                            <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+                            Ver todas no Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POR QUE ENGENHARIA -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow"><span class="num">03</span>Por que engenharia</p>
+                        <h2>Obra sem acompanhamento técnico costuma sair mais cara.</h2>
+                    </div>
+                    <p class="section-intro">O barato da obra improvisada aparece depois: material desperdiçado, serviço refeito, rachaduras e imóvel que não pode ser vendido ou financiado.</p>
+                </div>
+
+                <div class="reasons">
+                    <div class="reason reveal">
+                        <span class="reason-num">01</span>
+                        <h3>Menos retrabalho e desperdício</h3>
+                        <p>Planejamento e compras bem feitos evitam material sobrando, serviço refeito e dinheiro perdido no meio do caminho.</p>
+                    </div>
+                    <div class="reason reveal">
+                        <span class="reason-num">02</span>
+                        <h3>Segurança estrutural</h3>
+                        <p>Fundações, estrutura e contenções executadas por quem responde tecnicamente por elas.</p>
+                    </div>
+                    <div class="reason reveal">
+                        <span class="reason-num">03</span>
+                        <h3>Imóvel regular vale mais</h3>
+                        <p>Documentação em dia facilita venda e financiamento e evita multas e embargos.</p>
+                    </div>
+                    <div class="reason reveal">
+                        <span class="reason-num">04</span>
+                        <h3>Um responsável do início ao fim</h3>
+                        <p>Você sabe com quem falar e acompanha o andamento sem precisar estar na obra todos os dias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESSO -->
+        <section class="section" id="processo">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow"><span class="num">04</span>Como trabalhamos</p>
+                        <h2>Do primeiro contato à entrega da obra.</h2>
+                    </div>
+                    <p class="section-intro">Um caminho simples e transparente, para você saber exatamente o que vai acontecer em cada fase.</p>
+                </div>
+
+                <ol class="steps">
+                    <li class="step reveal">
+                        <span class="step-node" aria-hidden="true"></span>
+                        <span class="step-num">Etapa 01</span>
+                        <h3>Conversa inicial</h3>
+                        <p>Você conta o que precisa pelo WhatsApp. Entendemos objetivo, prazo e quanto pretende investir.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-node" aria-hidden="true"></span>
+                        <span class="step-num">Etapa 02</span>
+                        <h3>Visita técnica</h3>
+                        <p>Vamos até o terreno ou imóvel para avaliar as condições e levantar tudo o que a obra exige.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-node" aria-hidden="true"></span>
+                        <span class="step-num">Etapa 03</span>
+                        <h3>Proposta e planejamento</h3>
+                        <p>Você recebe escopo, valores e cronograma por escrito antes de qualquer serviço começar.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-node" aria-hidden="true"></span>
+                        <span class="step-num">Etapa 04</span>
+                        <h3>Execução e entrega</h3>
+                        <p>Obra acompanhada por engenheiro, com atualizações frequentes até a entrega final.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="section section-alt" id="contato">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <p class="eyebrow"><span class="num">05</span>Contato</p>
+                    <h2>Fale direto com um engenheiro.</h2>
+                    <p class="section-intro">Conte o que você precisa. Quem responde é quem vai cuidar da sua obra.</p>
+
+                    <div class="engineers">
+                        <div class="engineer">
+                            <span class="avatar" aria-hidden="true">JP</span>
+                            <div class="engineer-body">
+                                <strong>Eng. João Paulo</strong>
+                                <a class="engineer-phone" href="tel:+5524981636739">(24) 98163-6739</a>
+                            </div>
+                            <a class="btn btn-wa btn-sm" href="https://api.whatsapp.com/send?phone=5524981636739&text=Ol%C3%A1%2C%20Jo%C3%A3o%20Paulo.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Additive%20Engenharia." target="_blank" rel="noopener" aria-label="Conversar com João Paulo no WhatsApp">
+                                <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp
+                            </a>
+                        </div>
+                        <div class="engineer">
+                            <span class="avatar" aria-hidden="true">G</span>
+                            <div class="engineer-body">
+                                <strong>Eng. Guilherme</strong>
+                                <a class="engineer-phone" href="tel:+5524998370792">(24) 99837-0792</a>
+                            </div>
+                            <a class="btn btn-wa btn-sm" href="https://api.whatsapp.com/send?phone=5524998370792&text=Ol%C3%A1%2C%20Guilherme.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Additive%20Engenharia." target="_blank" rel="noopener" aria-label="Conversar com Guilherme no WhatsApp">
+                                <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <ul class="contact-meta">
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Resende/RJ e região Sul Fluminense</li>
+                        <li><a href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>@additiveengenharia</a></li>
+                        <li><a href="https://www.facebook.com/additiveengenharia" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>facebook.com/additiveengenharia</a></li>
+                    </ul>
+                </div>
+
+                <form class="quote-form" id="orcamento" novalidate>
+                    <h3>Solicite um orçamento</h3>
+                    <p class="form-note">Preencha e envie: sua mensagem abre pronta no WhatsApp.</p>
+
+                    <div class="field">
+                        <label for="f-nome">Seu nome</label>
+                        <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="f-servico">Tipo de serviço</label>
+                            <select id="f-servico" name="servico" required>
+                                <option value="" selected disabled>Selecione</option>
+                                <option>Construção</option>
+                                <option>Reforma ou ampliação</option>
+                                <option>Fiscalização de obra</option>
+                                <option>Consultoria ou projeto</option>
+                                <option>Regularização de imóvel / usucapião</option>
+                                <option>Plotagem</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="f-cidade">Cidade / bairro</label>
+                            <input id="f-cidade" name="cidade" type="text" autocomplete="address-level2" placeholder="Ex.: Resende, Centro">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="f-msg">Conte um pouco sobre a obra <span class="optional">(opcional)</span></label>
+                        <textarea id="f-msg" name="mensagem" rows="4" placeholder="Ex.: Quero construir uma casa de 2 quartos em terreno de 300 m²."></textarea>
+                    </div>
+
+                    <fieldset class="field">
+                        <legend>Falar com</legend>
+                        <div class="choices">
+                            <label class="choice"><input type="radio" name="eng" value="5524981636739|João Paulo" checked><span>Eng. João Paulo</span></label>
+                            <label class="choice"><input type="radio" name="eng" value="5524998370792|Guilherme"><span>Eng. Guilherme</span></label>
+                        </div>
+                    </fieldset>
+
+                    <p class="form-error" role="alert" hidden>Preencha seu nome e o tipo de serviço.</p>
+
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">
+                        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                        Enviar pelo WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand brand-light" href="#topo" aria-label="Additive Engenharia, voltar ao topo">
+                    <img src="assets/logo-mark.png" alt="" width="54" height="41">
+                    <span class="brand-text">
+                        <span class="brand-name">ADDITIVE</span>
+                        <span class="brand-sub">Engenharia</span>
+                    </span>
+                </a>
+                <p>Gestão, execução e fiscalização de obras, projetos e regularização de imóveis em Resende e região.</p>
+            </div>
+
+            <nav class="footer-col" aria-label="Serviços">
+                <h4>Serviços</h4>
+                <a href="#servicos">Execução de obras</a>
+                <a href="#servicos">Fiscalização</a>
+                <a href="#servicos">Consultoria e projetos</a>
+                <a href="#servicos">Regularização e usucapião</a>
+                <a href="#servicos">Plotagem</a>
+            </nav>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="https://api.whatsapp.com/send?phone=5524981636739" target="_blank" rel="noopener">Eng. João Paulo · (24) 98163-6739</a>
+                <a href="https://api.whatsapp.com/send?phone=5524998370792" target="_blank" rel="noopener">Eng. Guilherme · (24) 99837-0792</a>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/additiveengenharia/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+                    <a href="https://www.facebook.com/additiveengenharia" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="container">
+            <div class="footer-bottom">
+                <span>© <span id="ano">2026</span> Additive Engenharia · Resende/RJ</span>
+                <a href="#topo">Voltar ao topo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <a class="wa-float" href="https://api.whatsapp.com/send?phone=5524981636739&text=Ol%C3%A1%2C%20Jo%C3%A3o%20Paulo.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Additive%20Engenharia." target="_blank" rel="noopener" aria-label="Pedir orçamento pelo WhatsApp">
+        <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    </a>
+
+    <script src="js/main.js" defer></script>
 </body>
 </html>
